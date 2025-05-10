@@ -9,19 +9,16 @@ public class Building {
     private boolean hasElevator;
     public boolean insideBuilding;
     public int riskLevel;
-    private Hashtable<String, Building> city;
     
-    // whether there is a north neighbor by the name north
     
  
-    public Building(Hashtable<String, Building>()) {
+    public Building(String name, int numFloors, int currentFloor, boolean hasElevator, boolean insideBuilding, int riskLevel) {
         this.name = name;
         this.numFloors = numFloors;
         this.currentFloor = 1;
         this.hasElevator = true;
         this.insideBuilding = false;
         this.riskLevel = riskLevel;
-        this.city = new Hashtable<String, Building>();
         
 
     }
@@ -58,29 +55,11 @@ public class Building {
         
     }
 
-    public void locationIntro() {
-        if () {
-
-        } else if () {
-
-
-        }
-    }
-
-    public String getNeighbor(String direction) {
-        this.myMap.get(direction);
-        return direction;
-        myMap.
-        // get building from the hashtable (can be null)
-    }
-
-    public void makeCity() {
-        
-    }
 
 public static void main(String[] args) {
     Building Home = new Building();
     Home.numFloors = 4;
+
 }
 
 }

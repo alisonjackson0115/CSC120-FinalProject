@@ -1,46 +1,26 @@
 public class Player {
 
     public String name;
-    public int supplies;
-    public CityMap location;
+    public int numSupplies;
 
-public Player(String name, int supplies, CityMap location) {
-    this.name = name;
-    this.supplies = 0;
-    this.location = Home;
-}
 
-public void moveLeft() {
+    public Player(String name) {
+        this.name = name;
+        this.numSupplies = 0;
+    }
 
-}
-
-public void moveRight() {
+    public int addSupplies() {
+        numSupplies = numSupplies + 1;
+        System.out.println("Click! Your photo was taken.");
+        System.out.println("You just earned a supplies point!");
+        System.out.println("You now have" + " " + numSupplies + " " + "supplies points");
+        return numSupplies;
     
-}
+    }
 
-public void moveUp() {
-    
-}
+    public void loseSupplies() {
+        numSupplies = 0;
+        System.out.println("You now have" + " " + numSupplies + " " + "supplies points");
+    }
 
-public void moveDown() {
-    
-}
-
-public void getLocation() {
-    return this.location;
-    location.Building;
-}
-
-public int getNumSupplies() {
-    return this.supplies;
-}
-
-// public Boolean addSupplies() {
-//     if (fulfillQuest = true) {
-//         supplies += 1;
-//         return true;
-//     } else {
-//         return false;
-//     }
-
-}
+    }
