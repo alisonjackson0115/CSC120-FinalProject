@@ -12,16 +12,12 @@ The overall structure of my game consisted of the following pattern: a player wo
 
 As a text-based game with the ability for players to choose their direction of movement and approach to tasks, I primarily made use of the Scanner method and if/then statements. Unfortunately, I was unable to successfully call and implement all of these methods in the main of my Gameplay class (as I encountered a lot of bugs), but I initialized all of the classes, attributes, and methods to the best of my ability. 
 
-When I began the project, my overall approach was to 
+When I began the project, my overall approach was to construct the classes in a similar way to the homework assignments from throughout the semester. I thought in terms of the objects I wanted to have interact throughout my game, so I started off by creating classes for the player, camera, and location. Once I had an idea of the attributes and methods I wanted in these classes, I wrote out my cheatsheet to develop the course of my story. Lastly, I created the gameplay class and added the text aspect into my game, which proved to be the one of the most challenging parts of the project. 
 
- Additional Reflection:
+However, the most difficult aspect of the project for me was figuring out how to initialize and implement my locations in the game. After a lot of trial and error, I finally settled on a Hashtable that took in the name of the location and its x- and y- coordinates that I selected based on the grid of the city. However, I initially planned to use a GraphBuilder, and I created a class that assigned nodes to the map based on the relative locations of the buildings. Since I was very unfamiliar with how to use Graph Builder, I decided to take a more intutive route. Although Jordan gave me some great advice regrding a Hashtable that could relate the locations of the buildings to each other, I was also a bit confused on the implementation of this. In the end, I went with a blend of these two ideas, as the Hashtable acted as a more concrete way to locate my buildings (by unique coordinates) while still storing the buildings in an effective way. Despite only having encountered Hashtables in a previous homework assingnment, I managed to apply this concept in a new way and learned a lot about object-oriented programming through creating a Hashtable that could interact with my PlayerLocation class.
+
+While there aren't many things that I wish I had implemented differently, there are a lot of additional features I would have liked to add (and coded for the project but did not end up using in the actual game). The first thing that comes to my mind is the building class, which initialized each location based on its features - like number of floors, whether or not it had an elevator, etc. I had really wished I was able to make the buildings more interactive for my player by having them enter the buildings (like in Zork) and move around in unique ways. I also planned to have a survivor class that would allow my player to interact with survivors throughout the city and potentially get their supplies taken away after a dangerous interaction. However, I would have liked to slightly alter my camera class so that the player could see the camera's battery and condition and get warnings if the battery was running low or the condition was worsening (pressuring them to complete the tasks faster).
+
+If I decided to design the game in a completely different way, I probably would have created randomized tasks that have more in-depth decision making and different quantities of supplies points that could be earned. While I tried to make the tasks randomly generated in my game, I couldn't quite figure it out and ran out of time. 
+
  
- 
- 
- - What was your **overall approach** to tackling this project?
- - What **new thing(s)** did you learn / figure out in completing this project?
- - Is there anything that you wish you had **implemented differently**?
- - If you had **unlimited time**, what additional features would you implement?
- - What was the most helpful **piece of feedback** you received while working on your project? Who gave it to you?
- - If you could go back in time and give your past self some **advice** about this project, what hints would you give?
- - _If you worked with a team:_ please comment on how your **team dynamics** influenced your experience working on this project.
