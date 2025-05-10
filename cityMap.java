@@ -1,20 +1,20 @@
 import com.google.common.graph.*;
 
-public class cityMap {
+public class CityMap {
    
   // cityMap(building hospital, building cityHall, building skyscraper, building greenhouse, building mall, building home) {
 
   // }
 
-  building home = new building("Home", 15, 1, true, true, 0);
-  building greenhouse = new building("City Greenhouse", 1, 1, false, false, 1);
-  building cityHall = new building("City Hall", 3, 1, true, false, 3);
-  building hospital = new building("City Hospital", 5, 1, true, false, 5);
-  building skyscraper = new building("City Skyscraper", 50, 1, true, false, 2);
-  building mall = new building("City Mall", 2, 1, true, false, 4);
+  Building home = new Building("Home", 15, 1, true, true, 0);
+  Building greenhouse = new Building("City Greenhouse", 1, 1, false, false, 1);
+  Building cityHall = new Building("City Hall", 3, 1, true, false, 3);
+  Building hospital = new Building("City Hospital", 5, 1, true, false, 5);
+  Building skyscraper = new Building("City Skyscraper", 50, 1, true, false, 2);
+  Building mall = new Building("City Mall", 2, 1, true, false, 4);
   
-    ImmutableGraph<building> myMap = GraphBuilder.undirected()
-      .<building>immutable()
+    ImmutableGraph<Building> myMap = GraphBuilder.undirected()
+      .<Building>immutable()
       .putEdge(hospital, cityHall)
       .putEdge(cityHall, skyscraper)
       .putEdge(skyscraper, greenhouse)
@@ -24,9 +24,9 @@ public class cityMap {
       .putEdge(mall, hospital)
       .build();
 
-  public building getNeighbors(building current) {
-    this.myMap.get(current).getAdjacent(Nodes());
-  }
+  // public Building getNeighbors(Building current) {
+  //   this.myMap.get(current).getAdjacent(Nodes());
+  // }
       
     
   }

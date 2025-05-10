@@ -2,12 +2,12 @@ public class Player {
 
     public String name;
     public int supplies;
-    public String location;
+    public CityMap location;
 
-public Player(String name, int supplies, String location) {
+public Player(String name, int supplies, CityMap location) {
     this.name = name;
     this.supplies = 0;
-    this.location = "Home";
+    this.location = Home;
 }
 
 public void moveLeft() {
@@ -24,6 +24,11 @@ public void moveUp() {
 
 public void moveDown() {
     
+}
+
+public void getLocation() {
+    return this.location;
+    location.Building;
 }
 
 public int getNumSupplies() {

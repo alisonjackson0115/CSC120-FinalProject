@@ -1,9 +1,9 @@
-public class request {
+public class Request {
     
     private int riskLevel;
-    private building questLocation;
+    private Building questLocation;
 
-    public request(int riskLevel, building questLocation) {
+    public Request(int riskLevel, Building questLocation) {
         this.riskLevel = riskLevel;
         this.questLocation = questLocation;
         

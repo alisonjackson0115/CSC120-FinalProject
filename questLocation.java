@@ -1,3 +1,3 @@
-public enum questLocation {
+public enum QuestLocation {
     greenhouse, skyscraper, cityHall, mall, hospital;
 }
